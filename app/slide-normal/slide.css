@@ -12,6 +12,7 @@
   margin: 0 auto;
   margin-top: 40px;
   padding: 10px;
+  overflow: hidden;
 }
 
 .slide__picture{
