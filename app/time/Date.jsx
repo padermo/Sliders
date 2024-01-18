@@ -11,7 +11,7 @@ function Date() {
 
   return (
     <div className='time_content'>
-      <input type="date" value={date ? date.toString().split('T')[0]:''} onChange={onChange} placeholder='fecha' className='time_input' />
+      <input type="date" value={date.trim() !== '' ? date : 'mm/dd/aaaa'} onChange={onChange} placeholder='fecha' className='time_input' />
     </div>
   )
 }
