@@ -1,10 +1,10 @@
 import React from 'react'
-import './time.css'
+import Date from './Date'
 
 function page() {
   return (
-    <div className='time_content'>
-      <input type="date" placeholder='fecha' className='time_input' />
+    <div>
+      <Date/>
     </div>
   )
 }
