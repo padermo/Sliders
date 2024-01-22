@@ -1,17 +1,20 @@
-'use client'
-import React, {useState} from 'react'
+
+import React from 'react'
 import './time.css'
 
 function Date() {
-  const [date, setDate] = useState('');
-
-  const onChange = (e) => {
-    setDate(e.target.value)
-  } 
-
   return (
     <div className='time_content'>
-      <input type="date" value={date.trim() !== '' ? date : 'mm/dd/aaaa'} onChange={onChange} placeholder='fecha' className='time_input' />
+      <div className='time_info'>
+        <div className='time_menu'>
+          <p>uno</p>
+          <p>dos</p>
+          <p>tres</p>
+        </div>
+      </div>
+      <div className='time_quote'>
+        <p>lorem</p>
+      </div>
     </div>
   )
 }

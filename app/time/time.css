@@ -1,15 +1,149 @@
-
 .time_content{
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.time_info{
+  background-color: green;
   width: 100%;
   height: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
+  grid-column: 1;
 }
 
-.time_input{
-  border: 1px solid #333;
-  border-radius: 20px;
-  padding: 4px 8px;
-  background: transparent;
+.time_menu{
+  display: flex;
+  gap: 20px;
+}
+
+.time_quote{
+  background-color: blue;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2;
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px) {
+  .time_content{
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: unset;
+    background-color: red;
+  }
+  
+  .time_info{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: unset;
+  }
+  
+  .time_menu{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .time_quote{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: unset;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+  .time_content{
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: unset;
+    background-color: purple;
+  }
+  
+  .time_info{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: unset;
+  }
+  
+  .time_menu{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .time_quote{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: unset;
+  }
+}
+
+@media screen and (max-width: 479px){
+  .time_content{
+    width: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: unset;
+    background-color: yellow;
+  }
+  
+  .time_info{
+    background-color: green;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: unset;
+  }
+  
+  .time_menu{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .time_quote{
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-column: unset;
+  }
 }
