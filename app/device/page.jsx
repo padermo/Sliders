@@ -6,7 +6,7 @@ function Device() {
   
   return (
     <div>
-      <p>{navigator.userAgent}</p>
+      <p>{window.navigator.userAgent}</p>
     </div>
   )
 }
