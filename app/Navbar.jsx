@@ -9,6 +9,7 @@ function Navbar() {
         <Link href={'/slide-normal'} className='navbar__link'>Slide Normal</Link>
         <Link href={'/slide-coverflow'} className='navbar__link'>Slide Coverflow</Link>
         <Link href={'/time'} className='navbar__link'>Time</Link>
+        <Link href={'/device'} className='navbar__link'>Device</Link>
       </div>
     </nav>
   )
