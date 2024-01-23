@@ -1,12 +1,16 @@
 'use client'
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 
 function Device() {
+  const [device, setDevice] = useState('')
   
-  
+  useEffect(()=>{
+    setDevice(window.navigator.userAgent)
+  },[])
+
   return (
     <div>
-      <p>{window.navigator.userAgent}</p>
+      {device && device}
     </div>
   )
 }
